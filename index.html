@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTrivia DAW</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <header>
+            <h1>WebTrivia DAW</h1>
+            <p id="score-counter">Puntuación: <span id="score">0</span> / 6</p>
+        </header>
+
+        <section id="question-section" aria-live="polite">
+            <div id="progress-indicator">Pregunta <span id="current-q">1</span> de 6</div>
+            <h2 id="question-text">Cargando pregunta...</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Los botones de opciones se cargan dinámicamente -->
+            </div>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>¡Juego Finalizado!</h2>
+            <p id="final-message">Has obtenido <span id="final-score">0</span> de 6 puntos.</p>
+            <button id="restart-btn" class="btn">Reiniciar Juego</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
